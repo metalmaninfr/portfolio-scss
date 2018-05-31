@@ -1,0 +1,23 @@
+.about {
+  background-color: #ECF0F1;
+  height: auto;
+  width: 100%;
+  margin-top: 2rem;
+
+  &__container {
+    // background-color: red;
+    height: 50%;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1rem;
+
+  }
+
+  &__text {
+    text-align: center;
+    color: #36393B;
+  }
+}

@@ -1,0 +1,235 @@
+.project {
+  background-color: $color-primary-grey;
+  height: auto;
+  width: 100%;
+  margin-top: 2rem;
+
+  &__h4 {
+    margin-left: 4rem;
+    margin-bottom: 2.5rem;
+    font-size: 2rem;
+    color: $color-secondary-bluelight;
+
+    @include for-size(tablet-portrait-up) {
+      font-size: 2.2rem;
+    }
+    @include for-size(desktop-up) {
+      font-size: 4rem;
+    }
+  }
+  &__container {
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+
+    @include for-size(tablet-portrait-up) {
+      padding: 2rem;
+    }
+
+    @include for-size(desktop-up) {
+      // background-color: yellow;
+      display: flex;
+      flex-direction: column;
+      width: 50%;
+      height: 50rem;
+      justify-content: space-evenly;
+      align-items: center;
+
+    }
+  }
+
+  &__mobile {
+    margin-top: 1.5rem;
+    margin-right: 2rem;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    font-size: 1.8rem;
+    color: $color-secondary-bluelight;
+
+    @include for-size(desktop-up) {
+      display: none;
+    }
+  }
+
+  &__code {
+    margin-top: 1.5rem;
+    margin-right: 2rem;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    font-size: 1.8rem;
+    color: $color-secondary-bluelight;
+    display: none;
+    @include for-size(tablet-portrait-up) {
+      font-size: 2rem;
+    }
+
+    @include for-size(desktop-up) {
+      font-size: 2.4rem;
+      display: block;
+
+      &:hover {
+        animation: pulsate 1.5s infinite;
+      }
+    }
+  }
+
+  &__text {
+    color: $color-primary-dark;
+
+    @include for-size(tablet-portrait-up) {
+      font-size: 1.7rem;
+    }
+
+    @include for-size(desktop-up) {
+      text-align: center;
+      font-size: 1.9rem;
+    }
+
+    @include for-size(big-desktop-up) {
+      text-align: center;
+    }
+  }
+
+
+  &__rectangle {
+
+    padding-bottom: 1rem;
+    @include for-size(desktop-up) {
+      height: 60rem;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+
+    }
+
+    @include for-size(big-desktop-up) {
+      font-size: 2.4rem;
+    }
+  }
+
+      &__list {
+        &-link1 {
+          color: #DAA520;
+          font-size: 1.8rem;
+          margin-left: 1rem;
+
+          @include for-size(tablet-portrait-up) {
+            font-size: 2.2rem;
+          }
+          @include for-size(desktop-up) {
+            font-size: 3rem;
+          }
+        }
+        &-link2 {
+          color: #B8D98E;
+          font-size: 1.8rem;
+          margin-left: 1rem;
+          @include for-size(tablet-portrait-up) {
+            font-size: 2.2rem;
+          }
+          @include for-size(desktop-up) {
+          font-size: 3rem;
+          }
+        }
+    }
+}
+
+
+.natour {
+
+
+  @include for-size(desktop-up) {
+    // background-color: red;
+    border-bottom: 10px solid $color-secondary-grey;
+  }
+
+  @include for-size(big-desktop-up) {
+    font-size: 2.4rem;
+  }
+}
+
+.trillo {
+  @include for-size(desktop-up) {
+    // background-color: red;
+    border-bottom: 10px solid $color-secondary-grey;
+  }
+
+  @include for-size(big-desktop-up) {
+    font-size: 2.4rem;
+  }
+}
+
+.nexter {
+  @include for-size(desktop-up) {
+    // background-color: red;
+    border-bottom: 10px solid $color-secondary-grey;
+  }
+
+  @include for-size(big-desktop-up) {
+    font-size: 2.4rem;
+  }
+}
+
+.uride {
+  @include for-size(desktop-up) {
+    // background-color: red;
+    border-bottom: 10px solid $color-secondary-grey;
+  }
+
+  @include for-size(big-desktop-up) {
+    font-size: 2.4rem;
+  }
+}
+
+.fantic {
+  @include for-size(desktop-up) {
+    // background-color: red;
+    border-bottom: 10px solid $color-secondary-grey;
+  }
+
+  @include for-size(big-desktop-up) {
+    font-size: 2.4rem;
+  }
+}
+
+.design {
+  @include for-size(desktop-up) {
+    // background-color: red;
+  }
+
+  @include for-size(big-desktop-up) {
+    font-size: 2.4rem;
+  }
+}
+
+.h4 {
+
+  @include for-size(desktop-up) {
+
+    &__natour {
+      color: $color-green;
+    }
+
+    &__trillo {
+      color: $color-pink;
+    }
+
+    &__nexter {
+      color: $color-gold;
+    }
+
+    &__uride {
+      color: $color-secondary-bluelight;
+    }
+
+    &__fantic {
+      color: $color-secondary-bluelight;
+    }
+
+    &__mokeup {
+      text-align: center;
+      color: $color-secondary-bluelight;
+    }
+  }
+}

@@ -1,0 +1,43 @@
+// Font
+$font-serif: 'Times', 'Times new roman', serif;
+$font-ss: 'Arial', 'Helvetica', sans-serif;
+
+// Color
+$mainColor: #4D7FD5;
+$secondaryColor: #4D61D6;
+$ultraColor: #927EEC;
+$star: #ffe578;
+
+$color-primary-grey: #ECF0F1;
+$color-secondary-grey: #BDC3C7;
+
+$color-primary-blue: #8DA7BE;
+$color-secondary-bluelight: #80CED7;
+$color-primary-dark: #36393B;
+
+$color-grey-light-2: #eee;
+
+$color-grey-dark: #777;
+
+$color-white: #fff;
+$color-black: #000;
+
+$color-green: #55c57a;
+$color-green-light: #7ed56f;
+$color-green-dark: #28b485;
+
+$color-gold: #c69963;
+$color-gold-dark: #B28451;
+
+$color-pink: #eb2f64;
+$color-pink-light: #FF3366;
+
+// Breakpoint
+$bp-tablet: 600px;
+$bp-desktop: 949px;
+$bp-desktop-large: 1200px;
+$bp-desktop-x-large: 1800px;
+
+html {
+  font-size: 62.5%;
+}

@@ -1,0 +1,100 @@
+.header {
+  // background-color: #ECF0F1;
+  background-image: linear-gradient($color-white, $color-primary-grey);
+  height: 100%;
+  width: 100%;
+
+  &__burger {
+    // background-color: red;
+    padding: 1rem;
+    cursor: pointer;
+
+    @include for-size(tablet-portrait-up) {
+      padding: 1.5rem;
+    }
+
+
+    @include for-size(desktop-up) {
+      display: none;
+    }
+
+    @include for-size(big-desktop-up) {
+      display: none;
+    }
+
+  }
+
+  &__container {
+    height: 96%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1rem;
+
+    @include for-size(tablet-portrait-up) {
+      padding: 2rem;
+    }
+  }
+
+  &__h1 {
+    text-align: center;
+  }
+
+  &__text {
+    text-align: center;
+    font-size: 1.7rem;
+    color: #36393B;
+
+    @include for-size(tablet-portrait-up) {
+      font-size: 1.9rem;
+    }
+  }
+
+  &__link {
+    color: #8DA7BE;
+  }
+
+  &__link:hover {
+    color: red;
+    transition: all .5s ease-out;
+  }
+}
+
+.bar-top {
+  height: .35rem;
+  width: 2.5rem;
+  background-color: #36393B;
+  margin-bottom: .4rem;
+
+  @include for-size(tablet-portrait-up) {
+    height: .4rem;
+    width: 3rem;
+  }
+}
+
+
+.bar-mid {
+  height: .35rem;
+  width: 2.5rem;
+  background-color: #36393B;
+  margin-bottom: .4rem;
+
+  @include for-size(tablet-portrait-up) {
+    height: .4rem;
+    width: 3rem;
+  }
+}
+
+
+.bar-bot {
+  height: .35rem;
+  width: 2.5rem;
+  background-color: #36393B;
+
+  @include for-size(tablet-portrait-up) {
+    height: .4rem;
+    width: 3rem;
+  }
+}

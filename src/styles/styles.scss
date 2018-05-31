@@ -1,0 +1,64 @@
+// global
+@import './global/reset';
+@import './global/variables';
+
+// mixins
+@import './mixins/forsize';
+@import './mixins/button';
+@import './mixins/mixins';
+// components
+@import './components/header';
+@import './components/navigation';
+@import './components/about';
+@import './components/project';
+@import './components/contact';
+@import './components/footer';
+@import './components/card';
+@import './components/buttons';
+@import './components/keyframes';
+
+
+
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box;
+  line-height: 1.6;
+  font-size: 1.6rem;
+  font-family: "Helvetica", Arial, sans-serif;
+  padding: 2rem;
+  line-height: 1.8;
+  background-color: #BDC3C7;
+
+}
+
+::selection {
+    background-color: #80CED7;
+    color: #000;
+    text-shadow: none;
+}
+
+h3 {
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 5rem;
+
+  @include for-size(tablet-portrait-up) {
+    font-size: 3.4rem;
+  }
+
+  @include for-size(desktop-up) {
+    font-size: 3.6rem;
+  }
+
+
+}
